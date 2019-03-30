@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view class="login_box">
+  <view class="login_mid">
+    <image src="../../images/viplogin.png"></image>
+    <text>对不起</text>
+    <text class="login_fail">您不是本单位职工</text>
+    <view class="loginBtn">
+      查看帮助
+    </view>
+  </view>
+</view>

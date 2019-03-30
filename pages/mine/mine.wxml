@@ -1,0 +1,30 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine_box">
+  <view class="view_top">
+    <view class='user_img'>
+      <open-data type="userAvatarUrl" class="user_name"></open-data>
+    </view>
+    <text class="view_name">{{userInfo.name}}</text>
+    <view class="view_money">
+      <text class="view_moneynum">{{userInfo.money}}</text>
+      <text class="view_moneyyuan">元</text>
+    </view>
+  </view>
+  <view class="view_bottom">
+    <view class="view_job">
+      <image src="../../images/zhiwei.png"></image>
+      <text>职位</text>
+      <span>{{userInfo.dept}}</span>
+    </view>
+    <view class="view_job">
+      <image src="../../images/gh.png"></image>
+      <text>编号</text>
+      <span>{{userInfo.staff_id}}</span>
+    </view>
+    <view class="view_job view_phones">
+      <image src="../../images/phone.png"></image>
+      <text>手机</text>
+      <span>{{userInfo.phone}}</span>
+    </view>
+  </view>
+</view>

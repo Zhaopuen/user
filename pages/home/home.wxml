@@ -1,0 +1,79 @@
+<!--pages/home/home.wxml-->
+<view>
+<!-- 头部 -->
+  <view class='top_content'>
+    <view class='user_data'>
+      <navigator url='../personal/personal' hover-class='none'>
+        <view class='ft_userinfo'>
+          <view class='user_img'>
+            <open-data type="userAvatarUrl" class="user_name"></open-data>
+          </view>
+          <view class='user_foti'>
+            <text>{{homeInfo.name}}</text>
+            <view class='user_section'>{{homeInfo.dept}}</view>
+          </view>
+        </view>
+      </navigator>
+      <view class='rt_ico'>
+        <view class='order'>
+          <image src='../../images/order.png'></image>
+        </view>
+        <view class='code'>
+          <image src='../../images/pay.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='affiche'>
+      <view class='afficheico'><image src='../../images/rund.png'></image></view>
+      <view class='affichetext'>您目前卡金余额为 {{homeInfo.money}} 元，月底清算请尽快消费~</view>
+    </view>
+  </view>
+  <!-- 菜单 -->
+  <view class="home_box">
+    <view class="nav_left">
+      <view wx:for="{{category}}" wx:for-item="item">
+        <view class="nac_left_li {{index===navActive?'active':''}}" data-index="{{index}}" data-id="b_{{index}}" bindtap="tap">{{item.title}}</view>
+      </view>
+    </view>
+    <scroll-view class="nav_right" scroll-y="true" scroll-into-view="{{toView}}" style="height:{{s_height}}px;" bindscroll="scroll" scroll-with-animation="true">
+        <view class="nav_right_box" wx:for="{{detail}}" style="height:{{indexdetail==detail.length-1?s_height+50+'px':''}}" wx:for-item="item" wx:for-index="indexdetail">
+          <view class="nav_right_tit" id="b_{{indexdetail}}">{{category[indexdetail].title}}</view>
+          <!-- <navigator url='../location/location' hover-class='none'>
+            <view class='site'>
+              <view bindtap="getLocation" wx:if="{{canLocation}}">
+                <text class="report_address ell">{{address}}</text>
+              </view>
+              <view bindtap="openSet" wx:else>
+                <button bindopensetting="bindopensetting" class="record openSet locationbtn" hoverClass="none" openType="openSetting" type="primary">需要用户授权相关功能</button>
+              </view>
+            </view>
+          </navigator> -->
+          <view class="nav_goods_box" wx:for="{{item}}" wx:for-item="good" wx:for-index="indexgood">
+            <image class="nav_goods_l" src="https://n.nx.tt{{good.img}}" mode="aspectFill"></image>
+            <view class="nav_goods_r">
+              <view class="nav_goods_name">{{good.title}}</view>
+              <view class="nav_goods_content">{{good.c_name}}</view>
+              <view class='dishes_price'>
+              <view class='price'>￥{{good.price}}</view>
+                <view class='price_c'>
+                  <image class='subtract' data-childid="{{ indexgood}}" data-parentid="{{indexdetail}}"  src='../../images/-.png' style="{{good.tasflag? 'display:inline-block;':'display:none;'}}" bindtap='subtractClick'></image>
+                  <text style="{{good.tasflag? 'display:inline-block;':'display:none;'}}">{{good.number}}</text>
+                  <image class='add' src='../../images/+.png' data-childid="{{ indexgood}}" data-parentid="{{indexdetail}}" bindtap='menuClick' data-mid='{{good.mid}}' ></image>
+                </view>
+              </view>
+            </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 底部   结算 -->
+  <view class='settlement'>
+    <view class='ico' bindtap="shopTab">
+      <image src="{{settlementurl}}"></image>
+      <text class="ico_tap" style="{{money == 0? 'display:none;':'display:block;'}}">+{{num}}</text>
+    </view>
+    <view class='money'>￥{{money}}</view>
+    <!-- <view class='choose' wx:if="{{!chooseBtn}}">选菜下单</view> -->
+    <view class='btn' bindtap="payTab">确认订单</view>
+  </view>
+</view>

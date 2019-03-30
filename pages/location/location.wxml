@@ -1,0 +1,28 @@
+<!--pages/location/location.wxml-->
+<view class='current'>
+  
+  <!-- <text> -->
+    <navigator url='../location/location' hover-class='none'>
+      <view class='site'>
+        <view bindtap="getLocation" wx:if="{{canLocation}}">
+          <image src='../../images/seG.png'></image>
+          <text class="report_address ell">{{address}}</text>
+        </view>
+        <view bindtap="openSet" wx:else>
+          <button bindopensetting="bindopensetting" class="record openSet locationbtn" hoverClass="none" openType="openSetting" type="primary">需要用户授权相关功能</button>
+        </view>
+      </view>
+    </navigator>
+  <!-- </text> -->
+</view>
+<view class='list'>
+  <view class='li'>
+    <view bindtap="getLocation" wx:if="{{canLocation}}">
+      <text class="report_address ell ft_name">{{address}}</text>
+      <view class='rt_ico'><image src='../../images/seld.png'></image><text></text></view>
+    </view>
+  </view>
+  <!-- <view class='li'>
+    <view class='ft_name'>惠农区供电公司</view>
+  </view> -->
+</view>

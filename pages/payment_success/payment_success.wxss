@@ -1,0 +1,81 @@
+/* pages/payment_success/payment_success.wxss */
+.ico {
+  width: 120rpx;
+	height: 120rpx;
+	background-image: linear-gradient(-30deg, #35bdb6 0%, #68ccc7 100%);
+	border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  margin-bottom: 80rpx;
+}
+.ico image {
+  width: 120rpx;
+	height: 120rpx;
+}
+.title {
+  text-align: center;
+  font-size: 40rpx;
+	line-height: 60rpx;
+	color: #35bdb6;
+  margin-bottom: 130rpx;
+}
+.hint {
+  width: 590rpx;
+	height: 280rpx;
+	background-color: rgba(53,189,182,.1);
+	border-radius: 40rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50rpx 40rpx;
+}
+.hint .text {
+  font-size: 24rpx;
+	line-height: 40rpx;
+	color: #35bdb6;
+}
+.hint .btn_v {
+  width: 280rpx;
+	height: 68rpx;
+	background-color:rgba(234,248,248,.5);
+	border-radius: 34rpx;
+	border: solid 2rpx rgba(53,189,182,.5);
+  text-align: center;
+  line-height: 68rpx;
+  font-size: 24rpx;
+	color: #35bdb6;
+  margin: 0 auto;
+  margin-top: 40rpx;
+} 
+.btn {
+  margin-top: 80rpx;
+  padding: 0 60rpx;
+  overflow: hidden;
+}
+.btn .btn_lis {
+  width: 280rpx;
+	height: 80rpx;
+	background-color: #ffffff;
+	border-radius: 40rpx;
+	border: solid 2rpx #e0e0e0;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+	color: #999999;
+  float: left;
+  margin: 0 15rpx;
+}
+.bottom_dis {
+  margin: 0 60rpx;
+  height: 80rpx;
+	background-color: #35bdb6;
+	border-radius: 40rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+	color: #ffffff;
+  margin-top: 40rpx;
+  position: fixed;
+  bottom:200rpx;
+  width: 85%;
+}

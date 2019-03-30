@@ -1,0 +1,22 @@
+<view class="rechange_box">
+  <view class="rechange_successIcon">
+    <image src="../../images/tipER.png"></image>
+    <h1 class="rechange_title">支付失败</h1>
+    <p>10分钟后未付款，自动取消订单</p>
+  </view>   
+  <view class="rechange_content">
+    <p>【温馨提示】</p>
+    <p>余额不足，请立即充值</p>
+    <!-- <navigator url="../rechange/rechange" hover-class="none"> -->
+      <button>立即充值</button>
+    <!-- </navigator> -->
+  </view>
+  <view class="rechange_btn">
+    <!-- <navigator url="../index/index" hover-class="none"> -->
+      <button class="rechange_return" bindtap="returnMenu">返回菜单</button>
+    <!-- </navigator> -->
+    <navigator url="../leave_pay/leave_pay" hover-class="none">
+      <button class="rechange_look">查看订单</button>
+    </navigator>
+  </view>
+</view>

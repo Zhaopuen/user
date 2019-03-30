@@ -1,0 +1,426 @@
+/**index.wxss**/
+page {
+  padding-bottom: 120rpx;
+}
+
+/* 个人信息 */
+.top_content {
+  box-shadow: 0rpx 10rpx 80rpx 0rpx rgba(68, 68, 68, 0.15);
+  padding-bottom: 14rpx;
+}
+.top_content .user_data {
+  overflow: hidden;
+}
+.top_content .user_data .ft_userinfo {
+  float: left;
+  margin-left: 40rpx;
+  overflow: hidden;
+  margin-top: 40rpx;
+}
+.top_content .user_data .ft_userinfo .user_img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-top: 8rpx;
+}
+.top_content .user_data .ft_userinfo .user_img image {
+  width: 100%;
+  height: 100%;
+}
+.top_content .user_data .ft_userinfo .user_foti {
+  float: left;
+  margin-left: 36rpx;
+}
+.top_content .user_data .ft_userinfo .user_foti .user_name{
+  font-size: 40rpx;
+	color: #444444;
+}
+.top_content .user_data .ft_userinfo .user_foti .user_section{
+  font-size: 24rpx;
+	color: #bbb;
+  margin-top: 10rpx;
+}
+.top_content .user_data .rt_ico {
+  float: right;
+  overflow: hidden;
+}
+.top_content .user_data .rt_ico .order {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 60rpx;
+  float: left;
+  margin-right: 60rpx;
+  position: relative;
+}
+.top_content .user_data .rt_ico .order::after {
+  content: "";
+  position: absolute;
+  width: 24rpx;
+	height: 24rpx;
+	background-color: #ff6204;
+  box-sizing: border-box;
+	border: solid 4rpx #ffffff;
+  border-radius: 50%;
+  right: -6rpx;
+  top: -6rpx;
+}
+.top_content .user_data .rt_ico .order image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.top_content .user_data .rt_ico .code {
+  float: left;
+  width: 110rpx;
+	height: 140rpx;
+	background-color: #35bdb6;
+	border-radius: 40rpx 0rpx 0rpx 40rpx;
+  margin-top: 16rpx;
+}
+.top_content .user_data .rt_ico .code image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 24rpx;
+  margin-top: 45rpx;
+}
+.affiche {
+  margin-top: 30rpx;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  overflow: hidden;
+}
+.affiche .afficheico {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  margin-right: 10rpx;
+}
+.affiche .afficheico image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.affiche .affichetext {
+  font-size: 24rpx;
+	color: #35bdb6;
+  line-height: 50rpx;
+  max-width: 550rpx;
+  text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+/* 菜单列表 */
+.content {
+  padding: 20rpx;
+  background-color: #F9F9F9;
+}
+.content .top_da {
+  overflow: hidden;
+  padding: 10rpx 20rpx;
+}
+.content .top_da .time {
+  font-size: 24rpx;
+	color: #444444;
+  line-height: 50rpx;
+  float: left;
+}
+.content .top_da .site {
+  float: right;
+  line-height: 50rpx;
+}
+.content .top_da .site image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+  display: block;
+  float:left;
+}
+.content .top_da .site text {
+  font-size: 24rpx;
+	color: #35bdb6;
+  /* line-height: 50rpx; */
+}
+.content .list {
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.content .list .li_box {
+  width: 50%;
+  float: left;
+  margin-bottom: 30rpx;
+}
+.content .list .li_box .li {
+  width: 310rpx;
+	height: 374rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 10rpx 60rpx 0rpx rgba(68, 68, 68, 0.1);
+	border-radius: 40rpx;
+  margin: 0 auto;
+} 
+.content .list .li_box .li .img {
+  width: 100%;
+  height: 240rpx;
+  border-radius: 40rpx 40rpx 0rpx 0rpx;
+  overflow: hidden;
+}
+.content .list .li_box .li .img image {
+  width: 100%;
+  height: 100%;
+}
+.content .list .li_box .li .details {
+  padding: 20rpx 22rpx;
+}
+.content .list .li_box .li .details .dishes {
+  font-size: 24rpx;
+	color: #444444;
+  margin-bottom: 10rpx;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+}
+.content .list .li_box .li .details .dishes span{
+  display:block;
+  float:left;
+  width:30%;
+}
+.content .list .li_box .li .details .dishes em{
+  display:block;
+  width:70%;
+  float:left;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.content .list .li_box .li .details .dishes_price {
+  overflow: hidden;
+} 
+.content .list .li_box .li .details .dishes_price .price {
+  float: left;
+  font-size: 32rpx;
+	color: #ff6204;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+.content .list .li_box .li .details .dishes_price .price_c {
+  float: right;
+} 
+.content .list .li_box .li .details .dishes_price .price_c image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.content .list .li_box .li .details .dishes_price .price_c text {
+  font-size: 24rpx;
+	color: #444444;
+  vertical-align: middle;
+  margin: 0 12rpx;
+}
+/* 结算 */
+.settlement {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+	background-color: #2f2f2f;
+  z-index: 99;
+}
+.settlement .ico {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -22rpx;
+  left: 40rpx;
+  z-index: 100;
+}
+.settlement .ico_tap {
+  position: absolute;
+  width: 34rpx;
+	height: 34rpx;
+  text-align: center;
+  line-height: 34rpx;
+  color: #fff;
+  font-size: 20rpx;
+	background-color: #ff6204;
+  border-radius: 50%;
+  right: -2rpx;
+  top: -2rpx;
+  text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+.settlement .ico image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.settlement .money {
+  font-size: 32rpx;
+	color: #ffffff;
+  position: absolute;
+  left: 180rpx;
+  line-height: 100rpx;
+}
+.settlement .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 220rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #2bd6ba;
+  font-size: 30rpx;
+	color: #ffffff;
+}
+.btnchoose{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 220rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #444;
+  font-size: 30rpx;
+	color: #ffffff;
+}
+.true{
+  display: inline-block;
+}
+.false{
+  display: none;
+}
+.locationshoquan{
+  background: transparent;
+  font-size: 30rpx;
+}
+
+/* 购物车弹窗 */
+.shop_box{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  background: reba(0,0,0,0.6);
+  position: fixed;
+}
+.shop_mid{
+  width:96%;
+  height:auto;
+  overflow: hidden;
+  background: #fff;
+  padding:2%;
+}
+.select_shop{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+.select_shop view{
+  color:#444;
+  font-size: 34rpx;
+}
+.slect_shopadd{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+.shopaddtitle{
+  font-size: 28rpx;
+  color:#111;
+  display: block;
+  float:left;
+}
+.shopaddprice{
+  font-size: 28rpx;
+  color:#2bd6ba;
+  display: block;
+  float:right;
+}
+
+
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  bottom:100rpx;
+}
+.shop_title{
+  width:100%;
+  height:70rpx;
+  background:#bbb;
+  text-align: center;
+  line-height:70rpx;
+  color:#fff;
+  font-size: 30rpx;
+}
+.shop_select{
+  width:94%;
+  height:auto;
+  overflow: hidden;
+  border-bottom:1px solid #f0f0f0;
+  padding:3%;
+}
+.shoptitle{
+  display: block;
+  float:left;
+  font-size: 30rpx;
+}
+.shop_right{
+  height:auto;
+  overflow: hidden;
+  float:right;
+}
+.shopprice{
+  display: block;
+  float:left;
+  color:#2bd6ba;
+  font-size: 30rpx;
+  line-height:55rpx;
+  margin-right:20rpx;
+}
+.price_c {
+  float: right;
+} 
+.price_c image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.price_c text {
+  font-size: 24rpx;
+	color: #444444;
+  vertical-align: middle;
+  margin: 0 12rpx;
+}
+
+.good_box {
+  width: 30rpx;
+  height: 30rpx;
+  position: fixed;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  z-index: 99; 
+  background: #ff6204;
+} 

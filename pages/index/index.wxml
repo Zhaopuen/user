@@ -1,0 +1,109 @@
+<wxs src="./imgUrl.wxs" module="tools" />
+
+<!--index.wxml-->
+<!-- 个人信息 -->
+<view class='top_content'>
+  <view class='user_data'>
+    <navigator url='../mine/mine' hover-class='none' open-type="switchTab">
+      <view class='ft_userinfo'>
+        <view class='user_img'>
+          <open-data type="userAvatarUrl" class="user_name"></open-data>
+        </view>
+        <view class='user_foti'>
+          <text>{{username}}</text>
+          <view class='user_section'>{{userdept}}</view>
+        </view>
+      </view>
+    </navigator>
+    <view class='rt_ico'>
+      <view class='order'>
+        <image src='../../images/order.png'></image>
+      </view>
+      <view class='code'>
+        <image src='../../images/pay.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='affiche'>
+    <view class='afficheico'><image src='../../images/rund.png'></image></view>
+    <view class='affichetext'>您目前卡金余额为 {{usermoney}} 元，月底清算请尽快消费~</view>
+  </view>
+</view>
+<!-- 菜单列表 -->
+<view class='content'>
+  <view class='top_da'>
+    <view class='time'>{{time}}</view>
+    <!-- <navigator url='../location/location' hover-class='none'> -->
+      <view class='site'>
+      <!-- catchtap="getLocation" -->
+        <view>
+          <!-- <text class="report_address ell">{{address}}</text> -->
+          <text class="report_address ell">{{userdept}}</text>
+        </view>
+      
+      </view>
+    <!-- </navigator> -->
+  </view>
+  <view class='list'>
+    <!-- 加入购物车抛物线的图标 -->
+    <view class="good_box" hidden="{{hide_good_box}}"  style="left: {{bus_x}}px; top:{{bus_y}}px;"></view>
+    <view class='li_box' data-index="{{index}}" wx:key="{{index}}" wx:for="{{menudata}}"  >
+      <view class='li'>
+        <view class='img'>
+          <image src="{{'https://n.nx.tt/uploads/'+item.img}}"></image>
+        </view>
+        <view class='details'>
+          <view class='dishes'><span style="color:rgb(53,189,182)">({{item.menuName}})</span><em>{{item.name}}</em></view>
+          <view class='dishes_price'>
+            <view class='price'>￥{{item.price}}</view>
+            <view class='price_c'>
+              <image class='subtract' id="{{index}}" src='../../images/-.png' style="{{item.tasflag? 'display:inline-block;':'display:none;'}}" bindtap='subtractClick'></image>
+              <text style="{{item.tasflag? 'display:inline-block;':'display:none;'}}">{{item.number}}</text>
+              <image class='add' src='../../images/+.png' id="{{index}}" bindtap='menuClick'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+<!-- 底部 结算 -->
+<view class='settlement'>
+  <view class='ico' bindtap="clickme"><image src="{{settlementurl}}"></image><text class="ico_tap" style="{{money == 0? 'display:none;':'display:block;'}}">+{{num}}</text></view>
+  <view class='money'>￥{{money}}</view>
+  <view class='btnchoose' bindtap="choose" wx:if="{{chooseShow}}">选菜下单</view>
+  <view class='btn' bindtap="pay" style="{{money == 0? 'display:none;':'display:block;'}}">确认订单</view>
+</view>
+
+<!-- 购物车弹窗 -->
+<!-- <view class="shop_box">
+  <view clas="shop_mid">
+    <view class="select_shop">
+      <view>已选商品</view>
+    </view>
+    <view class="slect_shopadd">
+      <text class="shopaddtitle">擀面皮</text>
+      <text class="shopaddprice">￥14</text>
+      
+    </view>
+  </view>
+</view> -->
+ 
+<!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框  -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <view class="shop_title">购物车</view>
+    <view class="shop_select" wx:for="{{shopadd}}">
+      <view class="shoptitle">{{item.title}}</view>
+      <view class="shop_right">
+        <view class="shopprice">￥{{item.price*item.number}}</view>
+        <view class='price_c'>
+          <image class='subtract' id="{{index}}" src='../../images/-.png' style="{{item.tasflag? 'display:none;':'display:inline-block;'}}" bindtap='shopsubtractClick'></image>
+          <text style="{{item.tasflag? 'display:none;':'display:inline-block;'}}">{{item.number}}</text>
+          <image class='add' src='../../images/+.png' id="{{index}}" bindtap='shopClick'></image>
+        </view>
+      </view>
+    </view>
+  </view>

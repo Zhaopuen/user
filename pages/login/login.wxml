@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<view class="login_box">
+  <view class="login_mid">
+    <image src="../../images/viplogin.png"></image>
+    <text>职工认证</text>
+    <button class="loginBtn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">授权认证</button>
+  </view>
+</view>

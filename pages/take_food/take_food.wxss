@@ -1,0 +1,150 @@
+/* pages/take_food/take_food.wxss */
+/* 订单详情 */
+.top_content {
+  box-shadow:0rpx 10rpx 80rpx 0rpx rgba(68, 68, 68, 0.15);
+  padding-bottom:20rpx;
+  padding-top: 50rpx;
+}
+.top_content .food {
+  width: 120rpx;
+	height: 120rpx;
+	background-image: linear-gradient(-30deg, 
+		#35bdb6 0%, 
+		#68ccc7 100%);
+	border-radius: 60rpx;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.top_content .food .num {
+  padding-top: 15rpx;
+  font-size: 48rpx;
+	color: #ffffff;
+}
+.top_content .food .title {
+  font-size: 20rpx;
+	color: #ffffff;
+	opacity: 0.8;
+}
+.top_content .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40rpx;
+	color: #35bdb6;
+}
+.top_content .user {
+  text-align: center;
+  font-size: 28rpx;
+	color: #444444;
+  margin: 29rpx 0;
+}
+.top_content .btn {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 60rpx;
+}
+.top_content .btn .btn_lis {
+  width: 280rpx;
+	height: 80rpx;
+	background-color: #ffffff;
+	border-radius: 40rpx;
+	border: solid 2rpx #e0e0e0;
+  font-size: 28rpx;
+	color: #444444;
+  line-height: 80rpx;
+  text-align: center;
+  float: left;
+  margin: 0 15rpx;
+}
+/* 已点菜单 */
+.menu {
+  margin: 20rpx;
+  background-color: #ffffff;
+	box-shadow: 0rpx 10rpx 60rpx 0rpx rgba(68, 68, 68, 0.1);
+	border-radius: 40rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.menu .title {
+  font-size: 28rpx;
+	color: #666666;
+  line-height: 100rpx;
+}
+.menu .menu_list {
+  border-top: 2rpx solid #f0f0f0;
+  border-bottom: 2rpx solid #f0f0f0;
+  box-sizing: border-box;
+  padding: 5rpx 0;
+}
+.menu .menu_list .li {
+  overflow: hidden;
+  margin: 20rpx 0;
+}
+.menu .menu_list .li .li_img {
+  width: 140rpx;
+	height: 140rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+  float: left;
+}
+.menu .menu_list .li .li_img image {
+  width: 100%;
+  min-height: 140rpx;
+}
+.menu .menu_list .li .li_data {
+  float: left;
+  margin-top: 10rpx;
+}
+.menu .menu_list .li .li_data .name{
+  font-size: 28rpx;
+	color: #666666;
+  margin-bottom: 20rpx;
+}
+
+.menu .menu_list .li .li_data .num{
+  font-size: 28rpx;
+	color: #666666;
+}
+.menu .menu_list .li .rt_price {
+  float: right;
+  font-size: 36rpx;
+	color: #666666;
+}
+.menu .total {
+  line-height: 100rpx;
+  text-align: right;
+  font-size: 36rpx;
+	color: #666666;
+}
+.menu .total text {
+  font-weight: bold;
+}
+.card {
+  margin: 0 20rpx;
+  background-color:#ffffff;
+  box-shadow:0rpx 10rpx 60rpx 0rpx rgba(68, 68, 68, 0.1);
+  border-radius:40rpx;
+  box-sizing:border-box;
+  padding:0 30rpx;
+  margin-bottom: 40rpx;
+}
+.card .lis {
+  overflow: hidden;
+  border-bottom: 2rpx solid #f0f0f0;
+  line-height: 90rpx;
+}
+.card .lis .title {
+  float: left;
+  font-size: 28rpx;
+	color: #666666;
+}
+.card .lis .text {
+  float: right;
+  font-size: 28rpx;
+	color: #666666;
+}
+.card .lis .famil image{
+  width: 32rpx;
+  height: 32rpx;
+}

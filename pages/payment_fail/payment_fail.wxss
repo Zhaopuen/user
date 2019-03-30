@@ -1,0 +1,89 @@
+/* pages/payment_fail/payment_fail.wxss */
+
+.rechange_box{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  background:#fff;
+}
+.rechange_successIcon{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+.rechange_box .rechange_successIcon image{
+  display: block;
+  width:120rpx;
+  height:120rpx;
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+.rechange_box .rechange_successIcon .rechange_title{
+  display: block;
+  width:100%;
+  color:#ff6205;
+  text-align: center;
+  margin-top:60rpx;
+  margin-bottom:20rpx;
+}
+.rechange_box .rechange_successIcon p{
+  display:block;
+  color:#ff6205;
+  text-align: center;
+  font-size: 30rpx;
+  margin-bottom: 60rpx;
+}
+.rechange_content{
+  width:60%;
+  height:230rpx;
+  margin:0 auto;
+  background:#EAF8F8;
+  border-radius:15rpx;
+  padding:10%;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color:#35bdb6;
+}
+.rechange_content p{
+  display: block;
+}
+.rechange_content button{
+  width:70%;
+  background:#35bdb6;
+  border-radius:34px;
+  color:#fff;
+  margin-top: 40rpx;
+}
+.rechange_btn{
+  width:85%;
+  height:auto;
+  overflow: hidden;
+  margin:80rpx auto 60rpx;
+}
+.rechange_btn .rechange_return{
+  width:45%;
+  background:#fff;
+  border-radius:40px;
+  border:1px solid #e0e0e0;
+  font-size: 30rpx;
+  float:left;
+}
+.rechange_look{
+  width:45%;
+  background:#fff;
+  border-radius:40px;
+  border:1px solid #e0e0e0;
+  font-size: 30rpx;
+  float:right;
+}
+.rechange_pay{
+  width:85%;
+  height:auto;
+  overflow: hidden;
+  margin:0 auto;
+  background:#35bdb6;
+  color:#fff;
+  font-size: 30rpx;
+  border-radius:40px;
+}

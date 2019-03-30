@@ -1,0 +1,63 @@
+<!--pages/take_food/take_food.wxml-->
+<!-- 订单详情 -->
+<view class='top_content'>
+  <view class='food'>
+    <view class='num'>20</view>
+    <view class='title'>取餐号</view>
+  </view>
+  <view class='title'>已完成！速去取餐</view>
+  <view class='user'>小张（信息部）</view>
+  <view class='btn'>
+    <navigator url="../home/home" hover-class="none">
+      <view class='btn_lis'>再来一单</view>
+    </navigator>
+    <view class='btn_lis'>扫码取餐</view>
+  </view>
+</view>
+<!-- 已点菜单 -->
+<view class='menu'>
+  <view class='title'>共计 4 份</view>
+  <view class='menu_list'>
+    <view class='li'>
+      <view class='li_img'>
+        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547712977913&di=9055622da1dc60ffa71867c15aaf1751&imgtype=0&src=http%3A%2F%2Fimg0.sc115.com%2Fuploads%2Fsc%2Fjpgs%2F1501%2Fapic9190_sc115.com.jpg'></image>
+      </view>
+      <view class='li_data'>
+        <view class='name'>蒜香小牛排</view>
+        <view class='num'>x1</view>
+      </view>
+      <view class='rt_price'>￥36.9</view>
+    </view>
+    <view class='li'>
+      <view class='li_img'>
+        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547712977911&di=50223525acd33b314cdd7d151de79c33&imgtype=0&src=http%3A%2F%2Fimg0.sc115.com%2Fuploads%2Fsc%2Fjpgs%2F04%2Fxpic10887_sc115.com.jpg'></image>
+      </view>
+      <view class='li_data'>
+        <view class='name'>麻酱豇豆</view>
+        <view class='num'>x1</view>
+      </view>
+      <view class='rt_price'>￥9.9</view>
+    </view>
+   
+  </view>
+  <view class='total'>合计：<text>￥52.8</text></view>
+</view>
+<!-- 卡金余额 -->
+<view class='card'>
+  <view class='lis'>
+    <view class='title'>卡金余额</view>
+    <view class='text'>￥75.2</view>
+  </view>
+  <view class='lis'>
+    <view class='title'>备注</view>
+    <view class='text famil'><image src='../../images/mody.png'></image></view>
+  </view>
+  <view class='lis'>
+    <view class='title'>下单时间</view>
+    <view class='text'>2018-12-10  11:10</view>
+  </view>
+  <view class='lis'>
+    <view class='title'>订单编号</view>
+    <view class='text'>2202 9220 0088 20</view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+var imghost = function (value)
+{
+  var app = getApp();
+  const globalData = app.globalData;
+  const imgurl = globalData.host + '/upload/' + value;
+  return globalData;
+}
+
+var time_status = function(value)
+{
+  var data = '通用';
+  if(value == 1)
+  {
+    data = "早餐";
+  }else if(value == 2)
+  {
+    data = "午餐";
+  }else if(value == 3)
+  {
+    data = "晚餐";
+  }
+  return data;
+}
+
+module.exports = {
+  imghost: imghost,
+  time_status: time_status
+};

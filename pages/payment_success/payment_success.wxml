@@ -1,0 +1,20 @@
+<!--pages/payment_success/payment_success.wxml-->
+<view class='ico'>
+  <image src='../../images/tipok.png'></image>
+</view>
+<view class='title'>下单成功！等待接单…</view>
+<!-- <view class='hint'>
+  <view class='text'>您本月的消费频率偏低，卡内余额过多，可能会影响到下个月的上卡金额哦~ 请积极消费！</view>
+  <view class='btn_v'>查看卡内余额</view>
+</view> -->
+
+<!-- <view class='btn'>
+  <view class='btn_lis'>取消订单</view>
+  <navigator url="../index/index" hover-class="none">
+    <view class='btn_lis'>再来一单</view>
+  </navigator>
+</view> -->
+
+<!-- <navigator url="../line_item/line_item?id={{orderId}}" hover-class='none'> -->
+  <view class='bottom_dis' bindtap="payDetail">订单详情</view>
+<!-- </navigator> -->

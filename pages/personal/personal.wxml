@@ -1,0 +1,40 @@
+<!--pages/personal/personal.wxml-->
+<wxs src="./personal.wxs" module="tools" />
+<!-- 个人信息 -->
+<view class='top_content'>
+  <view class='user_data'>
+    <!-- <navigator url='../personal/personal' hover-class='none'> -->
+      <view class='ft_userinfo'>
+        <view class='user_img'>
+          <open-data type="userAvatarUrl" class="user_name"></open-data>
+        </view>
+        <view class='user_foti'>
+          <text>{{peosonUser.name}}</text>
+          <view class='user_section'>{{peosonUser.dept}}</view>
+        </view>
+      </view>
+    <!-- </navigator> -->
+    <view class='rt_ico'>
+      <text>{{peosonUser.phone}}</text>
+      <image src='../../images/mode.png'></image>
+    </view>
+  </view>
+  <view class='surplus'>￥<text>{{peosonUser.money}}</text></view>
+  <view class='tiap'>本月卡金及账单，点击 
+    <navigator url="../rechange/rechange" hover-class='none'>
+      [微信充值]
+    </navigator>
+  </view>
+</view>
+
+<!-- 账单 -->
+<view class='card_title'>
+  <view class='ft_title'>本月</view>
+  <view class='spending'>总支出  ￥{{totalMoney}}</view>
+</view>
+<view class='card'>
+  <view class='lis' wx:for="{{personList}}">
+    <view class='title'><view>{{tools.order_status(item.pay_type)}}</view><view class='time'>{{tools.dateFormat(item.create_time)}}</view></view>
+    <view class='text'>-{{item.money}}</view>
+  </view>
+</view>

@@ -1,0 +1,61 @@
+<!--pages/line_item/line_item.wxml-->
+<wxs src="../personal/personal.wxs" module="tools" />
+<!-- 订单详情 -->
+<!-- 制作中 -->
+<view class='top_content' wx:if="{{isShow}}">
+  <view class='title'>制作中，大约 11:40 完成</view>
+  <!-- <view class='user'>小张（信息部）</view> -->
+  <!-- <view class='btn'>
+    <navigator url="../index/index" hover-class="none">
+      <view class='btn_lis'>再来一单</view>
+    </navigator>
+    <view class='btn_lis'>催单</view>
+  </view> -->
+</view>
+<!-- 订单已完成 -->
+<view class='top_content' wx:if="{{!isShow}}">
+  <view class='title'>订单已完成</view>
+  <!-- <view class='user'>小张（信息部）</view> -->
+  <!-- <view class='btn'>
+    <navigator url="../index/index" hover-class="none">
+      <view class='finish_list'>再来一单</view>
+    </navigator>
+  </view> -->
+</view>
+
+<!-- 已点菜单 -->
+<view class='menu'>
+  <view class='title'>共计 {{totalcount}} 份</view>
+  <view class='menu_list'>
+    <view class='li' wx:for="{{orderList}}">
+      <view class='li_img'>
+        <image mode='widthFix' src="{{'https://n.nx.tt/uploads/'+item.img}}"></image>
+      </view>
+      <view class='li_data'>
+        <view class='name'>{{item.name}}</view>
+        <view class='num'>x{{item.num}}</view>
+      </view>
+      <view class='rt_price'>￥{{item.price*item.num}}</view>
+    </view>
+  </view>
+  <view class='total'>合计：<text>￥{{totalmoney}}</text></view>
+</view>
+<!-- 卡金余额 -->
+<view class='card'>
+  <view class='lis'>
+    <view class='title'>卡金余额</view>
+    <view class='text'>￥{{totalMoneyyue}}</view>
+  </view>
+  <!-- <view class='lis'>
+    <view class='title'>备注</view>
+    <view class='text famil'><image src='../../images/mody.png'></image></view>
+  </view> -->
+  <view class='lis'>
+    <view class='title'>下单时间</view>
+    <view class='text'>{{totaltime}}</view>
+  </view>
+  <view class='lis'>
+    <view class='title'>订单编号</view>
+    <view class='text'>{{totalOrderid}}</view>
+  </view>
+</view>

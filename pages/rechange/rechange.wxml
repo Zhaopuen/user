@@ -1,0 +1,18 @@
+<view class="rechange_box">
+  <view class="rechange_successIcon">
+    <image src="../../images/tipok.png"></image>
+    <h1 class="rechange_title">充值成功</h1>
+  </view>
+  <view class="rechange_content">
+    <p>您的订单还有五分钟自动取消，点击立即支付去结账</p>
+  </view>
+  <view class="rechange_btn">
+    <navigator url="../home/home" hover-class='none'>
+      <button class="rechange_return">返回菜单</button>
+    </navigator>
+    <navigator url="../leave_pay/leave_pay" hover-class='none'>
+      <button class="rechange_look">查看订单</button>
+    </navigator>
+  </view>
+  <button class="rechange_pay">立即支付</button>
+</view>

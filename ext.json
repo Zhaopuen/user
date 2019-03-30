@@ -1,0 +1,16 @@
+{
+  "extEnable": true,
+  "extAppid": "wx61a766a7becf6c00",
+  "directCommit": false,
+  "ext": {
+      "name": "park",
+      "host": "https://www.nx.tt",
+      "api_url": "https://www.nx.tt/addon/park/api",
+      "mpid": 9,
+      "uaid": "1"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

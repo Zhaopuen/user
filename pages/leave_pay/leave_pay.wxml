@@ -1,0 +1,36 @@
+<!--pages/leave_pay/leave_pay.wxml-->
+<!-- 订单详情 -->
+<view class='top_content'>
+  <view class='title'>大约 12:10 完成</view>
+  <!-- <view class='user'>{{username}} （{{userjob}}）</view> -->
+</view>
+<!-- 已点菜单 -->
+<view class='menu'>
+  <view class='title'>共计 {{num}} 份</view>
+  <view class='menu_list'>
+    <view class='li' wx:for="{{orderList}}">
+      <view class='li_img'>
+        <image mode='widthFix' src="{{'https://n.nx.tt/uploads/'+item.img}}"></image>
+      </view>
+      <view class='li_data'>
+        <view class='name'>{{item.title}}</view>
+        <view class='num'>x{{item.number}}</view>
+      </view>
+      <view class='rt_price'>￥{{item.price*item.number}}</view>
+    </view>
+  </view>
+  <view class='total'>合计：<text>￥{{price}}</text></view>
+</view>
+<!-- 卡金余额 -->
+<!-- <view class='card'>
+  <view class='lis'>
+    <view class='title'>卡金余额</view>
+    <view class='text'>￥75.2</view>
+  </view>
+  <view class='lis'>
+    <view class='title'>备注</view>
+    <view class='text famil'><image src='../../images/mody.png'></image></view>
+  </view>
+</view> -->
+<!-- 支付 -->
+<view class='btn_pay' bindtap="pay">立即支付</view>
